@@ -289,5 +289,25 @@
     "key": "alt+3",
     "command": "workbench.action.toggleSidebarVisibility",
     "when": "sideBarVisible && sideBarFocus && activeViewlet == 'workbench.view.scm' && !isAuxiliaryWindowFocusedContext"
+  },
+  {
+    "key": "alt+4",
+    "command": "workbench.view.debug",
+    "when": "!(sideBarFocus && activeViewlet == 'workbench.view.debug') && viewContainer.workbench.view.debug.enabled"
+  },
+  {
+    "key": "alt+4",
+    "command": "workbench.action.toggleSidebarVisibility",
+    "when": "sideBarVisible && sideBarFocus && activeViewlet == 'workbench.view.debug' && !isAuxiliaryWindowFocusedContext"
+  },
+  {
+    "key": "alt+5",
+    "command": "workbench.view.extensions",
+    "when": "!(sideBarFocus && activeViewlet == 'vscode1.focusedViewlet == 'workbench.view.extensions'') && viewContainer.workbench.view.extensions.enabled"
+  },
+  {
+    "key": "alt+5",
+    "command": "workbench.action.toggleSidebarVisibility",
+    "when": "sideBarVisible && sideBarFocus && activeViewlet == 'workbench.view.extensions' && !isAuxiliaryWindowFocusedContext"
   }
 ]
