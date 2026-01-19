@@ -171,5 +171,25 @@
   {
     "key": "shift+cmd+w",
     "command": "-workbench.action.closeWindow"
-  }
+  },
+  {
+    "key": "ctrl+shift+cmd+up",
+    "command": "workbench.action.editor.previousChange",
+    "when": "editorTextFocus && !textCompareEditorActive"
+  },
+  {
+    "key": "ctrl+shift+cmd+down",
+    "command": "workbench.action.editor.nextChange",
+    "when": "editorTextFocus && !textCompareEditorActive"
+  },
+  {
+    "key": "ctrl+shift+alt+z",
+    "command": "git.revertSelectedRanges",
+    "when": "editorTextFocus && !editorReadonly && !operationInProgress"
+  },
+  {
+    "key": "ctrl+shift+cmd+z",
+    "command": "git.revertSelectedRanges",
+    "when": "editorTextFocus && !editorReadonly && !operationInProgress"
+  },
 ]
