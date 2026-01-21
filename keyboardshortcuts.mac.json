@@ -192,4 +192,17 @@
     "command": "git.revertSelectedRanges",
     "when": "editorTextFocus && !editorReadonly && !operationInProgress"
   },
+  {
+    "key": "ctrl+shift+r",
+    "command": "code-runner.run"
+  },
+  {
+    "key": "ctrl+alt+n",
+    "command": "-code-runner.run"
+  },
+  {
+    "key": "ctrl+shift+r",
+    "command": "-editor.action.refactor",
+    "when": "editorHasCodeActionsProvider && textInputFocus && !editorReadonly"
+  },
 ]
