@@ -1,0 +1,16 @@
+{
+	"Console log variable": {
+	  "prefix": "cv",
+	  "body": [
+		"console.log(`### ${1:var} =`, $1)"
+	  ],
+	  "description": "Logs variable with ### prefix"
+	},
+	"Console log text": {
+		"prefix": "cl",
+		"body": [
+		  "console.log(`### $1`)"
+		],
+		"description": "Logs text with ### prefix"
+	  }
+}
