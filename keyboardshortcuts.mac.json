@@ -262,7 +262,7 @@
   {
     "key": "cmd+alt+z",
     "command": "git.clean",
-    "when": "(filesExplorerFocus && !inputFocus) || config.git.enabled",
+    "when": "(filesExplorerFocus && !inputFocus) || (config.git.enabled && !editorFocus)",
   },
   {
     "key": "cmd+d",
