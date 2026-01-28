@@ -246,16 +246,27 @@
   {
     "key": "cmd+1",
     "command": "-workbench.view.explorer",
-    "when": "viewContainer.workbench.view.explorer.enabled && !explorerViewletFocus"
+    "when": "viewContainer.workbench.view.explorer.enabled && !explorerViewletFocus",
   },
   {
     "key": "cmd+1",
     "command": "runCommands",
     "args": {
       "commands": [
-      "workbench.files.action.showActiveFileInExplorer",
-      "workbench.view.explorer"      ]
+        "workbench.files.action.showActiveFileInExplorer",
+        "workbench.view.explorer",
+      ],
     },
-    "when": "viewContainer.workbench.view.explorer.enabled && !explorerViewletFocus"
-  }
+    "when": "viewContainer.workbench.view.explorer.enabled && !explorerViewletFocus",
+  },
+  {
+    "key": "cmd+alt+z",
+    "command": "git.clean",
+    "when": "filesExplorerFocus && !inputFocus",
+  },
+  {
+    "key": "cmd+d",
+    "command": "git.openChange",
+    "when": "filesExplorerFocus && !inputFocus",
+  },
 ]
