@@ -243,4 +243,19 @@
     "command": "-editor.action.copyLinesUpAction",
     "when": "editorTextFocus && !editorReadonly",
   },
+  {
+    "key": "cmd+1",
+    "command": "-workbench.view.explorer",
+    "when": "viewContainer.workbench.view.explorer.enabled && !explorerViewletFocus"
+  },
+  {
+    "key": "cmd+1",
+    "command": "runCommands",
+    "args": {
+      "commands": [
+      "workbench.files.action.showActiveFileInExplorer",
+      "workbench.view.explorer"      ]
+    },
+    "when": "viewContainer.workbench.view.explorer.enabled && !explorerViewletFocus"
+  }
 ]
